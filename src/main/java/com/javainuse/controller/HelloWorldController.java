@@ -19,7 +19,7 @@ public class HelloWorldController {
     }
     @RequestMapping({"/createUser"})
     public String createUser(@RequestParam(name="userName") String userName,@RequestParam(name="dob")String dob,@RequestParam(name = "profilePic") String profilePic, @RequestParam(name = "location") String location){
-        return "successful/failure"
+        return "successful/failure";
     }
 
     @RequestMapping({"/getOrderHistory"})
