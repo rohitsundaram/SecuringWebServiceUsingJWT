@@ -1,0 +1,19 @@
+How to use this program.
+
+
+this link first http://localhost:8080/authenticate
+In the body of request add in json format.
+
+{
+"username":"javainuse",
+"password":"password"
+}
+
+you will receive token like "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZhaW51c2UiLCJleHAiOjE1ODc3NTY0OTAsImlhdCI6MTU4NzczODQ5MH0.H7Gu8um_ROBq9TRdnT8Wdn40HvVjRka9ob7-rLQNa4gxjIjRx_D-87Vlxb1iGhJa4ONqOnYZGNfwjYD3ee6AlA"
+
+Now hit this link
+http://localhost:8080/hello
+add Headers key 
+Authorization = Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZhaW51c2UiLCJleHAiOjE1ODc3NTY0OTAsImlhdCI6MTU4NzczODQ5MH0.H7Gu8um_ROBq9TRdnT8Wdn40HvVjRka9ob7-rLQNa4gxjIjRx_D-87Vlxb1iGhJa4ONqOnYZGNfwjYD3ee6AlA
+
+
